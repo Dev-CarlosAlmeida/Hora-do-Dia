@@ -8,7 +8,7 @@ function carregar() {
 
   if (minutos < 10) minutos = "0" + minutos;
 
-  msg.innerHTML = `Agora são ${hora}:${minutos} horas.`;
+  msg.innerHTML = `Agora são ${hora}:${minutos}.`;
 
   if (hora >= 0 && hora < 12) {
     img.src = "img/dia.png";
