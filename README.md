@@ -2,18 +2,13 @@ Hora do Dia ⏰
 
 Página que mostra a hora atual e muda o visual conforme o período do dia — manhã, tarde ou noite. 🌅🌇🌃
 
-<p align="center">
-  <img alt="Preview do projeto" src=".github/hora do dia.jpg" width="100%">
-</p>
-
-
 🚀 Tecnologias
 
-- HTML – estrutura da página
+- HTML 
 
-- CSS – estilos e layout
+- CSS 
 
-- JavaScript – lógica, manipulação do DOM e atualização dinâmica
+- JavaScript 
 
 💻 Projeto
 
