@@ -21,11 +21,14 @@ function atualizarHora() {
    var larguraTela = window.innerWidth;
    var tamanhoFonte, espacoPadding;
 
-   if (larguraTela <= 600) { // celular
-      tamanhoFonte = "6vw";    // maior no celular
-      espacoPadding = "6px 10px";
-    } else { // tablet ou PC
-      tamanhoFonte = "1.5vw";  // menor no PC
+   if (larguraTela <= 600) { 
+      tamanhoFonte = "40px";    
+      espacoPadding = "6px 12px";
+    } else if (larguraTela <= 900) {
+      tamanhoFonte = "3vw";  
+      espacoPadding = "4px 8px";
+    } else {
+      tamanhoFonte = "1.5vw";  
       espacoPadding = "2px 4px";
     }
 
@@ -39,6 +42,8 @@ function atualizarHora() {
   msg.style.textAlign = "center";
   msg.style.display = "inline-block";
   msg.style.margin = "20px auto";
+  msg.style.boxShadow = "0 0 10px #f00";
+
   
   var section = msg.parentNode;
   section.style.display = "flex";
