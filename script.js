@@ -18,12 +18,23 @@ function atualizarHora() {
 
   msg.textContent = hora + ":" + minutos + ":" + segundos;
 
+   var larguraTela = window.innerWidth;
+   var tamanhoFonte, espacoPadding;
+
+   if (larguraTela <= 600) { // celular
+      tamanhoFonte = "6vw";    // maior no celular
+      espacoPadding = "6px 10px";
+    } else { // tablet ou PC
+      tamanhoFonte = "1.5vw";  // menor no PC
+      espacoPadding = "2px 4px";
+    }
+
   msg.style.color = "#f00"; 
   msg.style.background = "#000"; 
-  msg.style.padding = "2px 4px";
+  msg.style.padding = espacoPadding;
   msg.style.borderRadius = "4px";
   msg.style.fontFamily = "monospace";
-  msg.style.fontSize = "1vw";
+  msg.style.fontSize = tamanhoFonte;
   msg.style.letterSpacing = "0.3vw";
   msg.style.textAlign = "center";
   msg.style.display = "inline-block";
